@@ -1,9 +1,9 @@
 package Command;
 
-public class BuyStock implements Order{
-    private Stock stock;
+public class BuyCommand implements Command {
+    private Receiver stock;
 
-    public BuyStock(Stock stock) {
+    public BuyCommand(Receiver stock) {
         this.stock = stock;
     }
 

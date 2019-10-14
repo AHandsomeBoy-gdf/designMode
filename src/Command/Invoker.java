@@ -6,16 +6,16 @@ import java.util.List;
 /**
  *命令调用类
  */
-public class Broker {
+public class Invoker {
 
-    private List<Order> orderList = new ArrayList<>();
+    private List<Command> orderList = new ArrayList<>();
 
-    public void takeOrder(Order order){
+    public void takeOrder(Command order){
         orderList.add(order);
     }
 
     public void placeOrders(){
-        for (Order order : orderList) {
+        for (Command order : orderList) {
             order.execute();
         }
         orderList.clear();

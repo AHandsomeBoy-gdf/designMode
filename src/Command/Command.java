@@ -1,5 +1,5 @@
 package Command;
 
-public interface Order {
+public interface Command {
     void execute();
 }

@@ -8,12 +8,12 @@ package Command;
  */
 public class CommandPattern {
     public static void main(String[] args) {
-        Stock abcStock = new Stock();
+        Receiver abcStock = new Receiver();
 
-        BuyStock buyStockOrder = new BuyStock(abcStock);
-        SellStock sellStockOrder = new SellStock(abcStock);
+        BuyCommand buyStockOrder = new BuyCommand(abcStock);
+        SellCommand sellStockOrder = new SellCommand(abcStock);
 
-        Broker broker = new Broker();
+        Invoker broker = new Invoker();
         broker.takeOrder(buyStockOrder);
         broker.takeOrder(sellStockOrder);
 

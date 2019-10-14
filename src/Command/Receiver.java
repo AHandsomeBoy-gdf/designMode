@@ -1,9 +1,9 @@
 package Command;
 
 /**
- * 请求类
+ * 接收者
  */
-public class Stock {
+public class Receiver {
 
     private String name = "ABC";
     private int quantity = 10;
